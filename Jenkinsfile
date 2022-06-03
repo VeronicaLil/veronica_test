@@ -7,9 +7,7 @@ pipeline {
             python3 main.py $day $month $year
             '''
         }
-    }
 
-    stages {
         steps {
             sh'''
             echo 
