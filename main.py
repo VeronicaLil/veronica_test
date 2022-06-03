@@ -10,6 +10,6 @@ if __name__ == "__main__":
     elif op == "mol":
         print(f"operazione {n_1} * {n_2} = ", n_1 * n_2)
     elif op == "sub":
-        print(f"operazione {n_1} - {n_2} = ", n_1 - n_2")
+        print(f"operazione {n_1} - {n_2} = ", n_1 - n_2)
     else:
-        print(f"operazione {n_1} / {n_2} = ", n_1 / n_2")
+        print(f"operazione {n_1} / {n_2} = ", n_1 / n_2)
