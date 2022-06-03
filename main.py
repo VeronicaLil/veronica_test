@@ -1,16 +1,20 @@
 import sys
+from datetime import datetime
 
-# argv[0] nome programma ... gli altri i valori da console
+
 if __name__ == "__main__":
-    n_1 = int(sys.argv[1])
-    n_2 = int(sys.argv[2])
-    op = str(sys.argv[3])
-    if op == "add":
-        print(f"operazione {n_1} + {n_2} = ", n_1 + n_2)
-    elif op == "mol":
-        print(f"operazione {n_1} * {n_2} = ", n_1 * n_2)
-    elif op == "sub":
-        print(f"operazione {n_1} - {n_2} = ", n_1 - n_2)
+    day = int(sys.argv[1])
+    month = int(sys.argv[2])
+    year = int(sys.argv[3])
+    birthday = datetime(year, month, day)
+    now = datetime.now() 
+    difference = now - birthday     
+    days = str(difference).split(" ")[0]
+    years = int(days) / 365
+    print(years)
+
+    if years >= 18:
+        print("Maggiorenne")
     else:
-        print(f"operazione {n_1} / {n_2} = ", n_1 / n_2)
-        print(f"operazione {n_1} / {n_2} = ", n_1 / n_2)
+        print("Minorenne")
+
