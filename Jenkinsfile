@@ -5,7 +5,7 @@ pipeline {
         stage ("ESEGUI FILE") {
             steps {
                 sh'''
-                python3 main.py $day $month $year
+                python3 main.py $day $month $year $years_to_add
                 '''
             }
         }
