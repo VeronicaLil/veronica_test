@@ -18,6 +18,8 @@ if __name__ == "__main__":
     #    print("Maggiorenne")
     #else:
     #    print("Minorenne")
+    
+    years_to_add_int = int(years_to_add or 20)
 
-    future_years = years + int(years_to_add)
+    future_years = years + years_to_add_int
     print(f"You will have {future_years}")
