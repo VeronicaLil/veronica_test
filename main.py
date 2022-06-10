@@ -19,5 +19,5 @@ if __name__ == "__main__":
     #else:
     #    print("Minorenne")
 
-    future_years = years + years_to_add
+    future_years = years + int(years_to_add)
     print(f"You will have {future_years}")
