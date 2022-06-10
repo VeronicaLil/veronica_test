@@ -1,4 +1,5 @@
 import sys
+import os
 from datetime import datetime
 
 
@@ -6,7 +7,7 @@ if __name__ == "__main__":
     day = int(sys.argv[1])
     month = int(sys.argv[2])
     year = int(sys.argv[3])
-    years_to_add = int(sys.argv[4])
+    years_to_add = os.getenv('years_to_add')
     birthday = datetime(year, month, day)
     now = datetime.now() 
     difference = now - birthday     
