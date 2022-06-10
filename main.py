@@ -10,11 +10,12 @@ if __name__ == "__main__":
     now = datetime.now() 
     difference = now - birthday     
     days = str(difference).split(" ")[0]
-    years = int(days) / 365
-    print(years)
+    years = round(int(days) / 365)
 
-    if years >= 18:
-        print("Maggiorenne")
-    else:
-        print("Minorenne")
+    #if years >= 18:
+    #    print("Maggiorenne")
+    #else:
+    #    print("Minorenne")
 
+    future_years = years + 20
+    print(f"You will have {future_years}")
