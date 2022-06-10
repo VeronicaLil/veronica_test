@@ -6,6 +6,7 @@ if __name__ == "__main__":
     day = int(sys.argv[1])
     month = int(sys.argv[2])
     year = int(sys.argv[3])
+    years_to_add = int(sys.argv[4])
     birthday = datetime(year, month, day)
     now = datetime.now() 
     difference = now - birthday     
@@ -17,5 +18,5 @@ if __name__ == "__main__":
     #else:
     #    print("Minorenne")
 
-    future_years = years + 20
+    future_years = years + years_to_add
     print(f"You will have {future_years}")
